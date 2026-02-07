@@ -1,0 +1,164 @@
+/**
+ * mikLIb color scheme
+ *
+ * UI_white:      #ffffff  - Text and secondary primary outline
+ * UI_light_gray: #999999  - Secondary outline
+ * UI_med_gray:   #666666  - Primary outline
+ * UI_dark_gray:  #434343  - Secondary background
+ * UI_black:      #000000  - Primary background
+ * UI_red:        #ff0000  - Tertiary outline / accent
+ */
+
+:root {
+  /* Softened red accent */
+  --ifm-color-primary: #d43f3f;
+  --ifm-color-primary-dark: #bf3838;
+  --ifm-color-primary-darker: #b43434;
+  --ifm-color-primary-darkest: #942b2b;
+  --ifm-color-primary-light: #da5252;
+  --ifm-color-primary-lighter: #dd5c5c;
+  --ifm-color-primary-lightest: #e57a7a;
+
+  /* Lifted dark backgrounds */
+  --ifm-background-color: #141414;
+  --ifm-background-surface-color: #434343;
+
+  /* White text */
+  --ifm-font-color-base: #ffffff;
+  --ifm-font-color-secondary: #999999;
+  --ifm-heading-color: #ffffff;
+  --ifm-link-color: #d43f3f;
+  --ifm-link-hover-color: #e57a7a;
+
+  /* Outlines and borders */
+  --ifm-color-emphasis-300: #666666;
+  --ifm-color-emphasis-200: #434343;
+  --ifm-hr-background-color: #666666;
+  --ifm-toc-border-color: #666666;
+  --ifm-table-border-color: #666666;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #141414;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #d43f3f;
+
+  /* Footer */
+  --ifm-footer-background-color: #141414;
+  --ifm-footer-color: #999999;
+  --ifm-footer-link-color: #ffffff;
+  --ifm-footer-link-hover-color: #d43f3f;
+  --ifm-footer-title-color: #ffffff;
+
+  /* Cards and code */
+  --ifm-card-background-color: #434343;
+  --ifm-code-font-size: 95%;
+  --ifm-code-background: #434343;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+
+  /* Sidebar */
+  --doc-sidebar-width: 300px;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #d43f3f;
+  --ifm-color-primary-dark: #bf3838;
+  --ifm-color-primary-darker: #b43434;
+  --ifm-color-primary-darkest: #942b2b;
+  --ifm-color-primary-light: #da5252;
+  --ifm-color-primary-lighter: #dd5c5c;
+  --ifm-color-primary-lightest: #e57a7a;
+
+  --ifm-background-color: #141414;
+  --ifm-background-surface-color: #434343;
+  --ifm-font-color-base: #ffffff;
+  --ifm-font-color-secondary: #999999;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar bottom border */
+.navbar {
+  border-bottom: 1px solid #666666;
+  box-shadow: none;
+}
+
+/* Footer top border */
+.footer {
+  border-top: 1px solid #666666;
+}
+
+/* Sidebar styling */
+.menu {
+  background-color: #141414;
+}
+
+.menu__link {
+  color: #999999;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  color: #ffffff;
+  background-color: #434343;
+}
+
+.menu__link:hover {
+  color: #ffffff;
+  background-color: #434343;
+}
+
+/* Table of contents */
+.table-of-contents__link {
+  color: #999999;
+}
+
+.table-of-contents__link--active {
+  color: #ffffff;
+}
+
+/* Pagination */
+.pagination-nav__link {
+  border-color: #666666;
+  background-color: #434343;
+}
+
+.pagination-nav__link:hover {
+  border-color: #d43f3f;
+}
+
+/* Breadcrumbs */
+.breadcrumbs__link {
+  color: #999999;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #ffffff;
+  background-color: #434343;
+}
+
+/* Doc cards */
+.card {
+  background-color: #434343;
+  border: 1px solid #666666;
+}
+
+.card:hover {
+  border-color: #d43f3f;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666666;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
