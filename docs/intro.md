@@ -1,47 +1,44 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
+# About
 
-Let's discover **Docusaurus in less than 5 minutes**.
+miklib is an easy to use odometry VEXcode template with UI support. 
 
-## Getting Started
+## Features
+- Generic PID class
+- Odometry
+   - Two tracker inertial
+   - Wall resetting
+- Drive motions
+   - Turn to heading and point
+   - Swing to heading and point
+   - Drive inches and to point
+   - Drive to pose via boomerang
+   - Follow path via pure pursuit
+   - Motion Chaining
+- User control
+   - Split Arcade
+   - Tank
+   - Drive curve versions
+- UI
+   - Realtime PID graphing and tuning
+   - Controller and Brain Auton Selector
+   - SD card selected auton and PID value saving
+   - Config Macros
 
-Get started by **creating a new site**.
+## UI Screenshots
+<img src="https://github.com/user-attachments/assets/793d6361-03ba-45cc-af82-35a3fb79a2af" width="30%"></img> <img src="https://github.com/user-attachments/assets/35a79166-4b36-4995-9404-e86c473272d3" width="30%"></img> <img src="https://github.com/user-attachments/assets/0b7263ef-75c8-4bc7-9867-c688df69eeec" width="30%"></img> <img src="https://github.com/user-attachments/assets/d258875b-ae19-42c7-876e-f9aa253c2c63" width="30%"></img> <img src="https://github.com/user-attachments/assets/a30d9869-0401-4e51-81e5-266d83596763" width="30%"></img> <img src="https://github.com/user-attachments/assets/a6206080-f246-4641-b311-27e4b61b2ca6" width="30%"></img> 
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-### What you'll need
+## Video Tutorials
+- [How to setup Tracking Wheels](https://youtu.be/ZLTW1LMl5fk)
+- [Configuring Chassis](https://youtu.be/JFp0QZ64V_E)
+- [Configuring Assembly](https://youtu.be/loy014PUDp0)
+- [Tuning PID](https://youtu.be/89Jj4shI0hc)
+- [Writing Autonoumous](https://youtu.be/HA26axr4WG8)
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+mikLib was developed by Ethan from team 654X. mikLib contains features from LemLib, JAR-Template, and taolib

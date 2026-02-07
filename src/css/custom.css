@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
 /**
  * mikLIb color scheme
  *
@@ -10,6 +12,9 @@
  */
 
 :root {
+  --ifm-font-family-base: 'Roboto Mono', monospace;
+  --ifm-heading-font-family: 'Roboto Mono', monospace;
+
   /* Softened red accent */
   --ifm-color-primary: #d43f3f;
   --ifm-color-primary-dark: #bf3838;
@@ -75,6 +80,32 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
+.navbar__title {
+  font-size: 0;
+}
+
+.navbar__title::before {
+  content: 'mik';
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  color: #999999;
+  transition: color 0.2s;
+}
+
+.navbar__title::after {
+  content: 'Lib';
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.navbar__brand:hover .navbar__title::before,
+.navbar__brand:hover .navbar__title::after {
+  color: #d43f3f;
+}
+
 /* Navbar bottom border */
 .navbar {
   border-bottom: 1px solid #666666;
@@ -117,7 +148,7 @@
 /* Pagination */
 .pagination-nav__link {
   border-color: #666666;
-  background-color: #434343;
+  background-color: #141414;
 }
 
 .pagination-nav__link:hover {
