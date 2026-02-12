@@ -167,13 +167,14 @@
 
 /* Doc cards */
 .card {
-  background-color: #434343;
+  background-color: #141414;
   border: 1px solid #666666;
 }
 
 .card:hover {
   border-color: #d43f3f;
 }
+
 
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -192,4 +193,13 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #999999;
+}
+
+/* Prism syntax highlighting overrides */
+.prism-code .token.class-name {
+  color: #4ec9b0 !important;
+}
+
+.prism-code .token.boolean {
+  color: #569cd6 !important;
 }
