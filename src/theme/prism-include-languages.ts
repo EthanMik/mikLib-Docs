@@ -9,6 +9,11 @@ export default function prismIncludeLanguages(PrismObject: PrismLib): void {
   if (cpp) {
     PrismObject.languages.insertBefore('cpp', 'function', {
       'class-name': [
+        // Match capitalized type names in declarations (e.g., Chassis in "Chassis chassis(")
+        {
+          pattern: /\b[A-Z]\w*(?=\s+[a-z_]\w*)/,
+          greedy: true,
+        },
         // Match identifiers before :: (namespace/class usage like mik::motor)
         {
           pattern: /\b[a-z_]\w*(?=\s*::)/i,
@@ -26,6 +31,26 @@ export default function prismIncludeLanguages(PrismObject: PrismLib): void {
             ? [cpp['class-name']]
             : []),
       ],
+    });
+
+    // Add bracket tokens — VSCode bracket pair colorizer style
+    PrismObject.languages.insertBefore('cpp', 'operator', {
+      // ( immediately before { → purple
+      'paren-brace': {
+        pattern: /\((?=\{)/,
+      },
+      // ) immediately after } → purple
+      'paren-after-brace': {
+        pattern: /(?<=\})\)/,
+      },
+      // { } → blue
+      'brace': {
+        pattern: /[{}]/,
+      },
+      // regular ( ) [ ] → yellow
+      'bracket': {
+        pattern: /[()[\]]/,
+      },
     });
   }
 }

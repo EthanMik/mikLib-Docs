@@ -195,11 +195,52 @@
   background: #999999;
 }
 
-/* Prism syntax highlighting overrides */
+/* Prism syntax highlighting overrides (VSCode Dark+ style) */
 .prism-code .token.class-name {
-  color: #4ec9b0 !important;
+  color: #4ec9b0 !important; /* teal-green — type/class names (Chassis) */
+}
+
+.prism-code .token.function {
+  color: #9cdcfe !important; /* light blue — variable/instance names (chassis) */
+}
+
+.prism-code .token.paren-brace,
+.prism-code .token.paren-after-brace {
+  color: #da70d6 !important; /* purple — parens adjacent to braces (VSCode level 2) */
+}
+
+.prism-code .token.brace {
+  color: #179fff !important; /* blue — curly braces (VSCode level 3) */
+}
+
+.prism-code .token.bracket {
+  color: #ffd700 !important; /* yellow — regular parens, square brackets (VSCode level 1) */
+}
+
+.prism-code .token.punctuation {
+  color: #d4d4d4 !important; /* white — commas, semicolons, :: etc. */
+}
+
+.prism-code .token.keyword {
+  color: #569cd6 !important; /* blue — keywords */
 }
 
 .prism-code .token.boolean {
-  color: #569cd6 !important;
+  color: #569cd6 !important; /* blue — true/false */
+}
+
+.prism-code .token.number {
+  color: #b5cea8 !important; /* light green — numeric literals */
+}
+
+.prism-code .token.string {
+  color: #ce9178 !important; /* orange — string literals */
+}
+
+.prism-code .token.comment {
+  color: #6a9955 !important; /* green — comments */
+}
+
+.prism-code .token.operator {
+  color: #d4d4d4 !important; /* white — operators */
 }
