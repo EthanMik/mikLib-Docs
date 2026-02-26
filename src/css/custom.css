@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap');
 
 /**
  * mikLIb color scheme
@@ -12,8 +12,8 @@
  */
 
 :root {
-  --ifm-font-family-base: 'Roboto Mono', monospace;
-  --ifm-heading-font-family: 'Roboto Mono', monospace;
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-heading-font-family: 'Inter', sans-serif;
 
   /* Softened red accent */
   --ifm-color-primary: #d43f3f;
@@ -28,10 +28,10 @@
   --ifm-background-color: #141414;
   --ifm-background-surface-color: #434343;
 
-  /* White text */
-  --ifm-font-color-base: #ffffff;
+  /* Light gray text */
+  --ifm-font-color-base: #cccccc;
   --ifm-font-color-secondary: #999999;
-  --ifm-heading-color: #ffffff;
+  --ifm-heading-color: #e0e0e0;
   --ifm-link-color: #d43f3f;
   --ifm-link-hover-color: #e57a7a;
 
@@ -75,7 +75,7 @@
 
   --ifm-background-color: #141414;
   --ifm-background-surface-color: #434343;
-  --ifm-font-color-base: #ffffff;
+  --ifm-font-color-base: #cccccc;
   --ifm-font-color-secondary: #999999;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
@@ -243,4 +243,9 @@
 
 .prism-code .token.operator {
   color: #d4d4d4 !important; /* white — operators */
+}
+
+/* Admonition (note/important) heading size */
+.admonition h5 {
+  font-size: 0.7rem;
 }
